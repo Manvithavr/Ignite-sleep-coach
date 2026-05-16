@@ -13,7 +13,7 @@ export default function Tracker() {
   const [wMin, setWMin] = useState('00');
   const [wAmPm, setWAmPm] = useState('AM');
 
-  const [quality, setQuality] = useState(0);
+  const [quality, setQuality] = useState(1);
   const [saved, setSaved] = useState(false);
 
   const qualityOptions = [
