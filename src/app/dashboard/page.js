@@ -45,12 +45,12 @@ export default function Dashboard() {
           <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-4 text-left max-w-sm">
             <div className="flex items-center gap-3 mb-2">
               <Sparkles size={18} className="text-brand-purple" />
-              <div className="font-semibold">Noctix — Your AI Sleep Coach</div>
+              <div className="font-semibold">Nocta — Your AI Sleep Coach</div>
             </div>
             <p className="text-xs text-brand-muted">Ask personalized sleep questions, get tips, and nightly coaching tailored to your logs.</p>
             <div className="mt-3">
               <Link href="/coach" className="bg-brand-purple/10 hover:bg-brand-purple/20 border border-brand-purple/20 text-brand-purple px-4 py-2 rounded-xl text-sm font-medium transition-all">
-                Open Noctix
+                Open Nocta
               </Link>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function Dashboard() {
         </div>
         <div className="flex gap-3">
           <Link href="/coach" className="bg-brand-purple/10 hover:bg-brand-purple/20 border border-brand-purple/20 text-brand-purple px-6 py-3 rounded-xl text-sm font-medium transition-all flex items-center gap-2">
-            <Sparkles size={16} /> Noctix
+            <Sparkles size={16} /> Nocta
           </Link>
           <Link href="/tracker" className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-6 py-3 rounded-xl text-sm font-medium transition-all flex items-center">
             + Add Log

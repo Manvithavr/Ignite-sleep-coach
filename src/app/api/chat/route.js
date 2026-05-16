@@ -15,7 +15,7 @@ export async function POST(request) {
     const response = await client.messages.create({
       model: 'claude-sonnet-4-20250514',
       max_tokens: 1024,
-      system: `You are Noctix, a friendly and knowledgeable sleep coach.\nYou help users improve their sleep based on their sleep logs.\nKeep responses short, warm, and actionable — max 3 sentences.\nThe user's recent sleep data: ${JSON.stringify(sleepData)}`,
+      system: `You are Nocta, a friendly and knowledgeable sleep coach.\nYou help users improve their sleep based on their sleep logs.\nKeep responses short, warm, and actionable — max 3 sentences.\nThe user's recent sleep data: ${JSON.stringify(sleepData)}`,
       messages: [
         { role: 'user', content: message }
       ],
