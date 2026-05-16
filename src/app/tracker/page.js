@@ -42,7 +42,8 @@ export default function Tracker() {
 
   function handleSave() {
     if (quality === 0) return;
-    
+    const qualityData = qualityOptions[quality - 1] || { emoji: '', label: '' };
+
     const newLog = {
       id: Date.now(),
       date: new Date().toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' }),
