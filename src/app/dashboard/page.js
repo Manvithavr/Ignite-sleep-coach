@@ -37,10 +37,24 @@ export default function Dashboard() {
           <Moon className="w-10 h-10 text-brand-purple" />
         </div>
         <h2 className="text-3xl font-outfit font-semibold mb-3">No sleep data yet</h2>
-        <p className="text-brand-muted text-sm max-w-sm mb-8">Start tracking your sleep to unlock deep insights, streaks, and AI coaching.</p>
-        <Link href="/tracker" className="bg-gradient-to-r from-brand-accent to-[#5aab94] text-[#0a0f1a] px-8 py-4 rounded-xl font-semibold text-sm hover:shadow-[0_0_20px_rgba(109,213,184,0.4)] transition-all">
-          Log Your First Night
-        </Link>
+        <p className="text-brand-muted text-sm max-w-sm mb-6">Start tracking your sleep to unlock deep insights, streaks, and AI coaching.</p>
+        <div className="flex flex-col sm:flex-row items-center gap-3">
+          <Link href="/tracker" className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-6 py-3 rounded-xl text-sm font-medium transition-all">
+            + Add Log
+          </Link>
+          <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-4 text-left max-w-sm">
+            <div className="flex items-center gap-3 mb-2">
+              <Sparkles size={18} className="text-brand-purple" />
+              <div className="font-semibold">Noctix — Your AI Sleep Coach</div>
+            </div>
+            <p className="text-xs text-brand-muted">Ask personalized sleep questions, get tips, and nightly coaching tailored to your logs.</p>
+            <div className="mt-3">
+              <Link href="/coach" className="bg-brand-purple/10 hover:bg-brand-purple/20 border border-brand-purple/20 text-brand-purple px-4 py-2 rounded-xl text-sm font-medium transition-all">
+                Open Noctix
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
@@ -110,7 +124,7 @@ export default function Dashboard() {
         </div>
         <div className="flex gap-3">
           <Link href="/coach" className="bg-brand-purple/10 hover:bg-brand-purple/20 border border-brand-purple/20 text-brand-purple px-6 py-3 rounded-xl text-sm font-medium transition-all flex items-center gap-2">
-            <Sparkles size={16} /> Nocta
+            <Sparkles size={16} /> Noctix
           </Link>
           <Link href="/tracker" className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-6 py-3 rounded-xl text-sm font-medium transition-all flex items-center">
             + Add Log
